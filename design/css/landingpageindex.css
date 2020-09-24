@@ -1,0 +1,29 @@
+body{
+	background-color: peru;
+	color: white;
+}
+#basic-landing h1{
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+}
+#basic-landing h3{
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+}
+#basic-landing a:link{
+text-decoration: none;
+color: white;
+}
+#basic-landing a:hover{
+text-decoration: underline;
+text-decoration-color: white;
+}
+#basic-landing a:visited{
+text-decoration: none;
+color: white;	
+}
+footer p{
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	text-align: center;
+}
