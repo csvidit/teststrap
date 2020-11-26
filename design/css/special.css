@@ -95,6 +95,11 @@ src: local('Brandon Grotesque Black Italic'), url('fonts/Brandon_blk_it.woff') f
 }
 /****END OF COPIED CONTENT******/
 
+.vkcs-gradient-2
+{
+	background-image: linear-gradient(to right, #0275d8, #000000);
+}
+
 .brandon-font{
 	font-family: Brandon Grotesque Medium;
 	padding-top: 10px;
@@ -111,4 +116,8 @@ src: local('Brandon Grotesque Black Italic'), url('fonts/Brandon_blk_it.woff') f
 	50%{
 		background-color: #FF476C;
 	}
+}
+
+.vkcs-gradient{
+	background-image: linear-gradient(to right,#0275d8,#FF476C);
 }
