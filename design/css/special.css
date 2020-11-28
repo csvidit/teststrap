@@ -121,3 +121,19 @@ src: local('Brandon Grotesque Black Italic'), url('fonts/Brandon_blk_it.woff') f
 .vkcs-gradient{
 	background-image: linear-gradient(to right,#0275d8,#FF476C);
 }
+
+ion-icon{
+	padding: 4px 4px 4px 4px;
+}
+
+ion-item
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.project-external-github-link-text
+{
+	display: inline-block;
+  vertical-align: middle;
+}

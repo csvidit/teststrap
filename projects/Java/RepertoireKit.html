@@ -36,6 +36,12 @@
 
 	</script>
 	<!meta http-equiv="refresh" content="0; URL='http://teststrap.viditkhandelwal.com/landingpage.html'/>
+
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+	<script src="https://unpkg.com/feather-icons"></script>
+
+
 	<link href="/cdn/assets/vkcs-favicon.ico" rel="icon">
 	<link rel="apple-touch-icon" href="https://cdn.viditkhandelwal.com/VKCS-apple-icon.png" alt="Icon for iOS Homescreen">
 	<meta name="theme-color" content="#0275d8" />
@@ -123,10 +129,10 @@
 	</div>
 
 	<div id="all" class="container-fluid bg-white primary py-5 py-*-5">
-		<h4>The Project</h4>
+		<h4>The Project</h4><hr>
 		<p class="text-justify">The goal of this project was to create a simple recipe management system. It was made in Java using a Maven Project, and I learnt many new things while doing it, such as file handling (both reading and writing), using buffers more extensively, using the Collection interface and all its subinterfaces and subclasses, and by extension, using more generics than I had ever used in my life. This program, written over serveral class files, has the following highlights:<br><br>
 
-		<h4>Highlights</h4><br><br>
+		<h4>Highlights</h4><hr>
 
 		<h5>Export to PDF</h5>
 		The user can instruct the program to export any recipe to PDF. Internally, the recipe file is first converted from an unformatted .txt file to a formatted .md file, and then it is converted to .pdf which is ready for printing.<br>
@@ -137,8 +143,9 @@
 		<li><code>search ingredient {ingredientName}</code></li>
 		<li><code>recipe {recipeName}</code></li>
 		<li><code>search section {sectionName}</code></li>
-		<li><code>search for {keywordName}</code></li>
-		<li><code>Other inputs</code></li>
+		<li><code>search for {keywordName}</code></li></ul>
+		<h4>Other inputs</h4><hr>
+		<ul>
 		<li><code>Adding a recipe</code></li>
 		<li><code>add recipe {recipeName}</code></li>
 		</ul>
@@ -152,14 +159,13 @@
 		<li><code>add ingredient {ingredientName}</code> which adds the ingredient if it exists elsewhere in the repertoire, or creates one if it is new. The user then enters the Quantity Edit Wizard, where they can add the quantity of the ingredient for that recipe and the corresponding unit.</li>
 		<li><code>edit ingredient {ingredientName}</code> to change the quantitiy/unit of the ingredient for that recipe. Currently, the system does not support editing the name of the ingredient after it has been added.</li>
 		<li><code>delete ingredient {ingredientName}</code> to delete the ingredient from the recipe, but not from the system. If no other recipes reference the ingredient, then it is garbage collected by the JVM at some point (the program does not deal with garbage collection).</li>
-		<li><code>add step {stepString}</code> to add one step at a time.</li>
+		<li><code>add step {stepString}</code> to add one step at a time.</li></ul>
 		A future version will allow the addition of multiple ingredients and steps at once.
-		</ul>
 
-		<br><br><h4>Export</h4>
+		<br><br><h4>Export</h4><hr>
 		After the user opens a recipe, they can type export to convert the recipe into a nicely formatted PDF with MarkDown style formatting for printing or other such uses.
 
-		<br><br><h4>External Maven Libraries Used</h4>
+		<br><br><h4>External Maven Libraries Used</h4><hr>
 		<ul>
 		<li>Google Guava</li>
 		<li>Markdown2PDF</li>
@@ -167,7 +173,12 @@
 
 		<div class="text-center"><h5>More detailed documentation coming as the project develops and comes closer to completion of v0.0.1!</h5></div>
 
-	<br><br><div class="text-center"><a href="https://github.com/csvidit/RepertoireKit" class="btn btn-outline btn-outline-primary" target="_blank">See Source Code on GitHub <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<script>
+  feather.replace()
+</script>
+
+	<br><br><div class="text-center"><a href="https://github.com/csvidit/RepertoireKit" class="btn btn-outline btn-outline-primary" target="_blank"><i data-feather="github"></i> Repository
+ <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
 </svg></a></div>
 		</p>
