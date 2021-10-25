@@ -17,4 +17,4 @@ Currently it is under construction, but the subdomain [cs.viditkhandelwal.com](h
 ## Upcoming Features
  - Site-wide Dark Mode
 
-&copy; 2020 Vidit Khandelwal 
+&copy; 2020 Vidit Khandelwal.

@@ -1,0 +1,1 @@
+//window.location.href = "https://uc.err.vidit.page/cs.html";

@@ -2,6 +2,14 @@
 	background-image: linear-gradient(to bottom right, #0275d8, black);
 }
 
+.custom-color-darkblue{
+	color: #004E8C;
+}
+
+.custom-bg-darkblue{
+	background-color: #004E8C;
+}
+
 /***code copied from startbootstrap.com***/
 
 header {

@@ -10271,3 +10271,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*copied code ends*/
+
+.custom-bg-darkblue{
+	background-color: #004E8C !important;
+}

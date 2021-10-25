@@ -37,45 +37,11 @@
 	<link rel="stylesheet" href="/design/css/special.css">
 </head>
 
-<body>
-
-	<script>
-		 feather.replace()
-		 </script>
+<body id="main-c">
+	<script src="/before.js"></script>
 
 	<!---Navbar Stars --->
-	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top border border-left-0 border-right-0 border-top-0 border-primary">
-		<a class="navbar-brand" href="/index.html"><img src="https://cdn.viditkhandelwal.com/VKCS Logo Blue.png" alt="VKCS Logo" style="width:100px;"></a>
-
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link" href="https://cdn.viditkhandelwal.com/Vidit%20Khandelwal%20Resume%20August%2014%202020.pdf" target="_blank">Resum&eacute; <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-</svg></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://github.com/csvidit">GitHub</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://repl.it/@ViditKhandelwal">REPL.it</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://www.linkedin.com/in/viditkhandelwal/">LinkedIn</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/about.html"> About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/projects.html">Projects</a>
-			</li>
-		</ul>
-		</div>
+	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top border border-left-0 border-right-0 border-top-0 border-primary" id="site-nav">
 	</nav>
 
 	<!---Navbar Ends--->
@@ -115,23 +81,26 @@
 	<!---Page Content Starts--->
 
 	<div id="all" class="container-fluid bg-white text-black text-justify primary py-5 py-*-5">
-		<h2 class="text-center text-primary">hellooooo</h2><hr><p>I am a Computer Science major at <a href="https://depauw.edu" alt="DePauw University's Official Website" target="_blank">DePauw University</a> in Greencastle, Ind. I am much more than a programmer, though! I love baking (and trust me that I don't say that my brownies and sabl&eacute;s are <strong>the</strong> best ones you could find in any home) too. One of my biggest hobbies, however, is writing. I am in the process of creating my own fictional universe set in the 25th century and later, which I am really excited about!</p><br><br>
-		<h2 class="text-center text-primary">a little bit about this web portfolio project</h2><hr>
+		<h2 class="display-4" style="color: white; background-color: #FF476C;">hellooooo</h2><hr><p>I am a Computer Science major at <a href="https://depauw.edu" alt="DePauw University's Official Website" target="_blank">DePauw University</a> in Greencastle, Ind. I am much more than a programmer, though! I love baking (and trust me that I don't say that my brownies and sabl&eacute;s are <strong>the</strong> best ones you could find in any home lightly) too. One of my biggest hobbies, however, is writing. I am in the process of creating my own fictional universe set in the 25th century and later, which I am really excited about!</p><br><br>
+		<h2 class="display-4" style="color: white; background-color: #FF476C;">a little bit about this web portfolio project</h2><hr>
 		<h3 class="text-primary">Security is Paramount</h3>
 		<p>This site uses Cloudflare for DDoS attack protection and uses HSTS (HTTP Strict Transport Security) which makes sure that the site does not load until an HTTPS connection which is SSL/TSL-encrypted is established. <strong>Apologies, but due to some issues with my domain's settings, I had to move back to the default (Google) nameservers because of which DDoS protection is currently inactive. This is temporary, and the site will be back to these strict security measures shortly!</strong></p>
+		<h3 class="text-primary">Privacy is Inalienable</h3><p>This website is completely untracked, since I could not find any analytics tool that was free, privacy-oriented, and easy to use.</p>
 		<h3 class="text-primary">Simplicity is Key</h3>
 		<p>No one likes a bulkly website. My previous attempt at creating a website <strong>from scratch</strong> using 100% custom stylesheets and vanilla JavaScript to implement RWD (such as a mobile-friendly Nav) did not go very well as it was buggy with way too much CSS and cringey <code>@keyframes</code> animations. Plus the moment I tried to create too many classes to implement a responsive navigation pane, I could not handle the number of classes and <code>divs</code> I had.<br>Hence, I chose to use Bootstrap. It was clean and elegant. It does not have fancy bells and whistles but it does the job well, and it is very convenient to use the very practically named classes in <code>HTML</code> rather than juggling between CSS and JS files.<br>That is not to say that I chose the simple route; I am still working on improving my CSS skills, but until then, at least I can say that I know how to implement CSS libraries!
 		<h3 class="text-primary">Content</h3>
-		<p>This website, when finished, will use <code>cdn.viditkhandelwal.com</code> as the Content Delivery System (CDN) based on the Google Cloud Platform for delivering all static files.</p>
+		<p>This website, when finished, will use <code>cdn.viditkhandelwal.com</code> as the Content Delivery System (CDN) based on the Google Cloud Platform for delivering all static files.<br>Currently, the website is being hosted as a REPL on repl.it, but I will be looking at more comprehensive hosting solutions in the future.</p>
 	</div>
 
 	<!---Page Content Ends--->
 
+<script src="/script.js"></script>
 </body>
-<footer class="navbar-sticky-bottom text-center">
+	<footer class="navbar-sticky-bottom text-center bg-primary text-white">
 		Website and Graphics &copy; 2020 Vidit Khandelwal<br>
-		This site uses <a href="https://getbootstrap.com">Bootstrap</a>
+		The GitHub logo is a registered trademark of GitHub, Inc.<br>
+		This site uses <a class="btn-link text-white"href="https://getbootstrap.com">Bootstrap</a>
 		<div class="brandon-font">
-			<p>VIDIT KHANDELWAL | CS</p>
+			<p>VIDIT KHANDELWAL | CS</p></div>
 </footer>
 </html>
