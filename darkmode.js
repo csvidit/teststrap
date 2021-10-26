@@ -1,14 +1,20 @@
-var siteStatus;
+//var siteStatus;
 
 function darkMode()
 {
 	var buttons = document.querySelectorAll("button");
-	if(siteStatus === undefined)
+	/*if(siteStatus === undefined)
 	{
 		siteStatus = "light";
 		return;
+	}*/
+	if(Cookies.get('siteStatus') === 'undefined')
+	{
+		Cookies.set('siteStatus', 'light', {expires: 7});
+		return;
 	}
-	else if(document.getElementById("dark")!=null)
+	//if(document.getElementById("dark")!=null)
+	else if(Cookies.get('siteStatus') === 'dark')
 	{
 		document.getElementById("dark").id="light";
 		document.querySelector("body").classList.replace("bg-black", "bg-white");
@@ -30,7 +36,8 @@ function darkMode()
 		{
 			borders[i].classList.replace("border-white", "border-dark");
 		}
-		siteStatus="light";
+		//siteStatus="light";
+		Cookies.set('siteStatus', 'light', {expires: 7});
 		document.getElementById("darkModeToggle").innerHTML="Revert to Dark Mode";
 	}
 	else
@@ -55,7 +62,8 @@ function darkMode()
 		{
 			borders[i].classList.replace("border-dark", "border-white");
 		}
-		siteStatus="dark";
+		//siteStatus="dark";
+		Cookies.set('siteStatus', 'dark', {expires: 7});
 		document.getElementById("darkModeToggle").innerHTML="Change to Light Mode";
 	}
 	
