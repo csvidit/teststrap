@@ -50,7 +50,7 @@
 
 </head>
 
-<body>
+<body id="light" class="bg-white" onload="darkMode()">
 
 	<!---Navbar Starts--->
 
@@ -70,6 +70,8 @@
 
 	<!---Header Ends--->
 
+	<button class="btn btn-outline-dark btn-sm" type="button" onclick="darkMode()" id="darkModeToggle">Change to Dark Mode</button>
+
 	<!---Alerts Start--->
 
 	<div class="alert alert-danger alert-dismissible fade show">
@@ -87,7 +89,7 @@
 
 	<!---Content Starts--->
 
-	<div id="all" class="container-fluid bg-white primary py-5 py-*-5">
+	<div id="all" class="container-fluid bg-white primary py-5 py-*-5 darkable">
 		<h4>The Project</h4>
 		<p class="text-justify">The goal of this project was to create a ADT (abstract data structure) called a <em>sorted stack</em>. It was implemented using a dynamically allocated array in memory, and took the shape of a binary tree. This structure, which was designed to store integers, had the following properties:
 		<ul>
@@ -109,6 +111,7 @@
 
 	<!---Content Ends--->
 <script src="/script.js"></script>
+<script src="/darkmode.js"></script>
 </body>
 	<footer class="navbar-sticky-bottom text-center">
 		Website and Graphics &copy; 2020 Vidit Khandelwal<br>

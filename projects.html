@@ -52,7 +52,7 @@
 	<script src="/design/js/scripts.js"></script>
 </head>
 
-<body>
+<body id="light" class="bg-white" onload="darkMode()">
 
 	<!---Navbar Stars --->
 	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top border border-left-0 border-right-0 border-top-0 border-primary" id="site-nav">
@@ -109,13 +109,15 @@
 
 	<!---Cards End--->
 
+	<button class="btn btn-outline-dark btn-sm" type="button" onclick="darkMode()" id="darkModeToggle">Change to Dark Mode</button>
+
 	<!---Jumbotron Starts--->
 
 	<div class="jumbotron bg-warning">
   <h1 class= "brandon-font text-center" style="color: #004E8C;">SPOTLIGHT</h1><br><br>
   <span style="color: #004E8C;"><h3 class="display-4 custom-color-darkblue">Tree Sorted Stack</h3></span>
   <hr class="my-4">
-  <p>A stack based on a binary tree that I made for my Data Structures course.</p>
+  <p class="text-dark">A stack based on a binary tree that I made for my Data Structures course.</p>
   <a class="btn btn-light btn-lg" href="/projects/C++/TreeSortedStack.html" role="button" target="_blank">View <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
 </svg></a>
@@ -125,10 +127,10 @@
 
 	<!---Page Content Starts--->
 
-	<div id="all" class="container-fluid bg-dark text-white primary py-5 py-*-5">
+	<div id="all" class="container-fluid bg-black text-white primary py-5 py-*-5">
 		<h3 style="">All Projects</h3>
 	</div>
-	<div id="all" class="container-fluid bg-white text-black primary py-5 py-*-5">
+	<div id="all" class="container-fluid bg-white text-dark primary py-5 py-*-5 darkable">
 		<h4 class="border border-top-0 border-left-0 border-right-0">TreeSortedStack</h4>
 		<p class="text-black">Final Project for Data Structures course</p>
 		<a href="/projects/C++/TreeSortedStack.html" class="">
@@ -140,7 +142,7 @@
 		</a>
 	</div>
 
-	<div id="all" class="container-fluid bg-white text-black primary py-5 py-*-5">
+	<div id="all" class="container-fluid bg-white text-black primary py-5 py-*-5 darkable">
 		<h4 class="border border-top-0 border-left-0 border-right-0">cmsKit</h4>
 		<p class="text-black">A simple course management system made in Java.</p>
 		<a href="/projects/Java/cmsKit.html" class="">
@@ -152,7 +154,7 @@
 		</a>
 	</div>
 
-	<div id="all" class="container-fluid bg-white text-black primary py-5 py-*-5">
+	<div id="all" class="container-fluid bg-white text-dark primary py-5 py-*-5 darkable">
 		<h4 class="border border-top-0 border-left-0 border-right-0">RepertoireKit</h4>
 		<p class="text-black">A CLI Recipe Management System made in Java</p>
 		<a href="/projects/Java/RepertoireKit.html" class="">
@@ -166,6 +168,7 @@
 
 	<!---Page Content Ends--->
 <script src="/script.js"></script>
+<script src="/darkmode.js"></script>
 </body>
 <footer class="navbar-sticky-bottom text-center">
 		Website and Graphics &copy; 2020 Vidit Khandelwal<br>

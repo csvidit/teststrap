@@ -1,3 +1,9 @@
-.dark{
-	background-color: #242424;
+.bg-black{
+	background-color: black;
+	color: white;
+}
+
+.navbar-black{
+	background-color: black;
+	color: white;
 }

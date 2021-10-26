@@ -56,7 +56,7 @@
 
 </head>
 
-<body id = "main-c" class="">
+<body id = "light" class="bg-white" onload="darkMode()">
 	<script src="/before.js"></script>
 
 	<!---Navbar Starts--->
@@ -108,6 +108,8 @@
 	</div>
 
 	--->
+
+	<button class="btn btn-outline-dark btn-sm" type="button" onclick="darkMode()" id="darkModeToggle">Change to Dark Mode</button>
 
 	<div class="alert alert-danger alert-dismissible fade show">
 		Due to an issue with my content delivery system, images may fail to load.
@@ -184,30 +186,30 @@
 
 	<div class="card-deck w-75 h-50 mx-auto">
 
-			<div class="card bg-warning shadow p-4 mb-4 bg-white" style="width:300px;">
+			<div class="card shadow p-4 mb-4 border-dark bg-white text-dark darkable" style="width:300px;">
 		<!img class="card-img-top" src="https://cdn.viditkhandelwal.com/CSVidit.png" alt="Vidit Khandelwal">
 		<img class="card-img-top" src="https://cdn.viditkhandelwal.com/RepertoireKitSquare.png" alt="RepertoireKit Project Graphic">
-		<div class="card body border-0">
+		<div class="card body border-0 text-dark bg-white darkable">
 			<h4 class="card-title text-center">Newest Project</h4>
 			<p class="card-text text-justify">A recipe management system made using a Java Maven Project</p>
 			<a href="https://cs.viditkhandelwal.com/projects/Java/RepertoireKit.html" class="btn btn-primary">Learn more</a>
 		</div>
 	</div>  
 
-	<div class="card bg-warning shadow p-4 mb-4 bg-white" style="width:300px;">
+	<div class="card shadow p-4 mb-4 border-dark bg-white text-dark darkable" style="width:300px;">
 		<img class="card-img-top" src="https://cdn.viditkhandelwal.com/IMG_9010-mod-1.png" alt="Vidit Khandelwal">
-		<div class="card body border-0">
+		<div class="card body border-0 text-dark bg-white darkable">
 			<h4 class="card-title text-center">About Me</h4>
 			<p class="card-text text-justify">I am Vidit Khandelwal, a sophomore studying Computer Science at DePauw University in Greencastle, IN.</p>
 			<!a href="https://www.linkedin.com/in/viditkhandelwal/" class="btn btn-primary"></a>
 		</div>
 	</div>
 
-		<div class="card bg-warning shadow p-4 mb-4 bg-white" style="width:300px;">
+		<div class="card shadow p-4 mb-4 border-dark bg-white text-dark darkable" style="width:300px;">
 		<img class="card-img-top" src="https://cdn.viditkhandelwal.com/CSVidit-CPP-Data-Structures-1.png" alt="Vidit Khandelwal">
-		<div class="card body border-0">
-			<h4 class="card-title text-center">Data Structures Project</h4>
-			<p class="card-text text-justify">During Spring 2020, when COVID-19 shook the world, my CS professor instructed us to make a unique data strucure as a final project instead of an exam.</p>
+		<div class="card body border-0 text-dark bg-white darkable">
+			<h4 class="card-title text-center darkable">Data Structures Project</h4>
+			<p class="card-text text-justify darkable">During Spring 2020, when COVID-19 shook the world, my CS professor instructed us to make a unique data strucure as a final project instead of an exam.</p>
 			<a href="/projects/C++/TreeSortedStack.html" class="btn btn-primary">Tree Sorted Stack</a>
 		</div>
 	</div>
@@ -223,5 +225,6 @@
 	<div class='container text-dark' id='site-footer'>
 	</div>
 	<script src="/script.js"></script>
+<script src="/darkmode.js"></script>
 </body>
 </html>
